@@ -27,15 +27,15 @@ class StringCalculator {
 void main() {
   final calc = StringCalculator();
 
-  print(calc.add("")); // 0
-  print(calc.add("1")); // 1
-  print(calc.add("1,2")); // 3
-  print(calc.add("1\n2,3")); // 6
-  print(calc.add("//;\n1;2")); // 3
+  print(calc.add("")); 
+  print(calc.add("1")); 
+  print(calc.add("1,2")); 
+  print(calc.add("1\n2,3")); 
+  print(calc.add("//;\n1;2")); 
 
   try {
     print(calc.add("1,-2,3,-4"));
   } catch (e) {
-    print(e); // negative numbers not allowed: -2,-4
+    print(e); 
   }
 }
